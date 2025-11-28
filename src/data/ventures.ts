@@ -116,6 +116,6 @@ export const ventureList = [
         description:
             "Betopia Limited, a strategic unit of Betopia Group, specializes in government tenders, OEM supply, and turnkey solutions—serving Bangladesh’s power, energy, and infrastructure sectors with trust, compliance, and precision.",
         image: "/sbu/bdcalling_engerprise.svg",
-        href: "https://bdcallingenterprise.com/ ",
+        href: "https://betopialimited.com/ ",
     }
 ].filter((x) => !!x?.href);
