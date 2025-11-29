@@ -20,7 +20,7 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SERVER_SSH_KEY }}
           script: |
-            cd /var/www/betopia-group-frontend
+            cd /var/www/betopia_group_frontend
             echo ">>> Pulling latest code"
             git pull origin dev
 
@@ -31,7 +31,7 @@ jobs:
             npm run build
 
             echo ">>> Restarting PM2 app"
-            pm2 restart nextapp || pm2 start npm --name "betopia-group-frontend" -- start
+            pm2 restart betopia-group-frontend || pm2 start npm --name "betopia-group-frontend" -- start
 
             echo ">>> Saving PM2 process list"
             pm2 save
