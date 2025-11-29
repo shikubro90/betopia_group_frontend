@@ -25,7 +25,7 @@ jobs:
             git pull origin dev
 
             echo ">>> Installing dependencies"
-            npm install --production
+            npm install
 
             echo ">>> Building Next.js app"
             npm run build
