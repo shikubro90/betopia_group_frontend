@@ -21,6 +21,9 @@ jobs:
           key: ${{ secrets.SERVER_SSH_KEY }}
           script: |
             cd /var/www/betopia_group_frontend
+          
+            git config --global --add safe.directory /var/www/betopia_group_frontend
+          
             echo ">>> Pulling latest code"
             git pull origin dev
 
