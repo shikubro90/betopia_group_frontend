@@ -29,7 +29,7 @@ interface DesktopNavItemProps {
 
 // Nav items
 const navItems: NavItem[] = [
-    { label: 'Vision & Purpose', href: '/', elId: 'vision_and_purpose' },
+    { label: 'Vision & Purpose Now', href: '/', elId: 'vision_and_purpose' },
     { label: 'Core Beliefs', href: '/', elId: 'core_beliefs' },
     {
         label: 'Words from Leadership',
